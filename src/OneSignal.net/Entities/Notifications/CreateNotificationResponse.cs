@@ -24,6 +24,7 @@ namespace OneSignal {
         /// Any invalid player id or external user ids found for the notification
         /// </summary>
         [JsonProperty("errors")]
+        [JsonConverter(typeof(CreateNotificationErrorsConverter))]
         public CreateNotificationErrors Errors { get; set; }
     }
 }

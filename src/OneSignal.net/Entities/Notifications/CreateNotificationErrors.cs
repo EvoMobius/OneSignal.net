@@ -14,5 +14,8 @@ namespace OneSignal {
         /// </summary>
         [JsonProperty("invalid_player_ids")]
         public List<string> InvalidPlayerIds { get; set; }
+
+        [JsonIgnore]
+        public List<string> ErrorMessages { get; set; }
     }
 }
